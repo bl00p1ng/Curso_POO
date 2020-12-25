@@ -20,3 +20,12 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     - Diagramas: plasmar el análisis de una forma gráfica
   - **Programar:**
     - Desarrollar lo que se acaba de diagramar usando algún lenguaje de programación.
+  
+- ### ¿Qué resuelve la Programación Orientada a Objetos?
+
+  Permite resolver muchos de los "huecos" que tiene la programación estructurada. Entre los problemas que resuelve están: 
+
+  - El código muy largo.
+  - Evita que si algo falla todo se rompa.
+  - Reduce la dificultad de mantener el código.
+  - Evita el código espagueti (demasiadas sentencias de control anidadas).
