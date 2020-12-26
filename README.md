@@ -95,4 +95,10 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
     Aprender UML es importante pues permite plasmar de forma gráfica lo que se va a implementar en el código y como esta construido el proyecto.
 
+    Algunas herramientas para trabajar con UML:
+
+    - [StarUML](http://staruml.io/download)
+    - [ArgoUML](https://argouml.uptodown.com/windows)
+    - [Lucidchart](https://www.lucidchart.com/)
+
     
