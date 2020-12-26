@@ -51,3 +51,15 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   - **Abstracción**
   - **Herencia**
   - **Polimorfismo**
+  
+- ### Lenguajes Orientados a Objetos
+
+  Algunos lenguajes orientados a objetos son:
+
+  - **Java:** orientado a objetos naturalmente, de hecho POO es su paradigma principal. Se usa principalmente en desarrollo de Apps para Android y Backend en servidores, APIs, etc. Extensión de archivo →  *.java*
+  - **PHP:** es un leguaje interpretado creado para programación Web. Extensión de archivo → *.php*
+  - **Python:** esta diseñado para ser fácil de usar, tiene una sintaxis amigable e intuitiva. Se puede usar en diversos campos como Backend, Data Science e Inteligencia Artificial. Extensión de archivo → *.py*
+  - **JavaScript:** es un lenguaje interpretado. Esta orientado a objetos pero basándose en *prototipos*. Es un leguaje pensado para Web y actualmente puede usarse tanto en el Frontend como en el Backend. Extensión de archivo → *.js*
+  - C#
+  - Ruby
+  - Kotlin
