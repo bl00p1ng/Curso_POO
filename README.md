@@ -63,3 +63,36 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   - C#
   - Ruby
   - Kotlin
+
+- ### Diagramas de Modelado
+
+  Los **diagramas de modelado** son una especie de gráficos que sirven de intermediarios entre el análisis que se hace del problema que se quiere solucionar y el código que se va a generar para solucionar dicho problema.
+
+  Hay 2 opciones de diagramas de modelado disponibles:
+
+  - **OMT:** *(Object Modeling Techniques)*. Creado en 1991. Es una metodología para el análisis orientado a objetos. Lo que propone es que una vez se hace el análisis y se tienen identificados los objetos, atributos, métodos, etc; se pasa a plasmar cada objeto en un recuadro, se ponen todos los atributos y métodos dentro de dicho recuadro y luego se usa una serie de conectores para establecer las relaciones entre los diferentes objetos.
+
+    ![OMT](https://i.imgur.com/GRHnJgt.png)
+
+    Actualmente esta en desuso y no se recomienda emplearlo en ningún proyecto.
+
+    
+
+  - **UML:** *(Unified Modeling Language - Lenguaje de modelado unificado)*. Creado en 1997. Se podría resumir como la versión moderna de OMT, pues unifica las bases y técnicas de este y las mejora. Es el método para crear diagramas de modelado que se usa en la actualidad. Tiene muchas más capacidades que OMT, entre las cuáles están:
+
+    - Clases
+    - Casos de uso
+    - Objetos
+    - Actividades
+    - Iteración
+    - Estados
+    - Implementación
+    - Etc
+
+    [Aprender más de UML](https://es.slideshare.net/still01/aprendiendo-uml-en-24-horas-16815956)
+
+    ![UML](https://i.imgur.com/5Dy46xi.png)
+
+    Aprender UML es importante pues permite plasmar de forma gráfica lo que se va a implementar en el código y como esta construido el proyecto.
+
+    
