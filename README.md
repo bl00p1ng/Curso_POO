@@ -29,3 +29,25 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   - Evita que si algo falla todo se rompa.
   - Reduce la dificultad de mantener el código.
   - Evita el código espagueti (demasiadas sentencias de control anidadas).
+
+- ### Paradigma Orientado a Objetos
+
+  La filosofía de **Orientación a Objetos** surge a partir de la necesitad de los programadores de plasmar soluciones a problemas en el código. Se basa en un  análisis del problema que se quiere abordar para posteriormente empezar a programar basándose a las conclusiones llegadas en dicho análisis. Esto ahorra el problema de no saber por donde empezar a resolver un problema con software.
+
+  En dicho análisis se observan los problemas en forma de objetos para después llevar todo a una solución en código.
+
+  **Paradigma:** teoría que suministra la base y modelo para resolver problemas.
+
+  El **Paradigma de Programación Orientada a Objetos** se compone de 4 elementos:
+
+  - **Clases**
+  - **Propiedades**
+  - **Métodos**
+  - **Objetos**
+
+  Además de esos 4 elementos , la POO también tiene 4 "Pilares":
+  
+  - **Encapsulamiento**
+  - **Abstracción**
+  - **Herencia**
+  - **Polimorfismo**
