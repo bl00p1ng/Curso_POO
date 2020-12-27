@@ -113,4 +113,9 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   - **¿Qué son las Propiedades?** También llamadas **atributos**. Son características o propiedades que describen a un objeto (por ejemplo: nombre, tamaño, forma, estado). Los tributos también son sustantivos.
   - **¿Qué son los comportamientos?** También se les conoce como **métodos**. Son todas las operaciones/acciones del objeto (por ejemplo: login(), logout(), makeReport()). Suelen ser verbos o sustantivo y verbo.
 
-  
+- ### Abstracción y Clases
+
+  Una **Clase** es el modelo sobre el cuál se construye un objeto. Para definirlo de una forma más sencilla de entender, se puede pensar en un una clase como un molde que se usa para crear objetos. 
+
+  En este punto se analizan Objetos, se establecen todos sus atributos y métodos y  en base a eso se crean Clases. Este proceso de abstraer los datos de un objeto para generar una clase (molde) se le conoce como **Abstracción**. En resumidas cuentas, la abstracción es ese proceso de analizar los objetos para identificar sus atributos y métodos comunes para en base a eso crear un molde llamando Clase.
+
