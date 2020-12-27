@@ -134,4 +134,33 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   - Rápida resolución de problemas
 
   Las clases son el elemento que permite la modularidad en la POO, pues permiten dividir el problema en distintas clases/módulos y a su vez separar dichas clases en diferentes archivos.
+  
+- ### Analizando Uber en Objetos
+
+  - **Análisis del problema:**
+
+    ![Análisis del funcionamiento de Uber](https://i.imgur.com/1VwEKHN.png)
+
+    
+
+  - **Análisis de los Objetos:**
+
+    |   **User**    |
+    | :-----------: |
+    |   **Route**   |
+    |  **Driver**   |
+    |   **UberX**   |
+    | **UberPool**  |
+    | **UberBlack** |
+    |  **UberVan**  |
+    |   **Trip**    |
+    |   **Cash**    |
+    |   **Card**    |
+    |  **Paypal**   |
+
+    
+
+  
+
+
 
