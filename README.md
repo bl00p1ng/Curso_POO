@@ -101,4 +101,16 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     - [ArgoUML](https://argouml.uptodown.com/windows)
     - [Lucidchart](https://www.lucidchart.com/)
 
-    
+  
+
+## 📚 Módulo 2. Orientación a Objetos
+
+- ### Objetos
+
+  Cuando hay un problema que se quiere resolver con Software lo primero que hay que hacer es **identificar los Objetos**.
+
+  - **¿Cómo identificar a los Objetos?** Los **objetos** son aquellos que tienen propiedades y comportamientos. Siempre son sustantivos. Pueden ser físicos (un Usuario por ejemplo) o conceptuales, es decir, que no existen físicamente, son simbologías de procesos que lleva a cabo el software que se esta construyendo (una de Sesión de Usuario por ejemplo).
+  - **¿Qué son las Propiedades?** También llamadas **atributos**. Son características o propiedades que describen a un objeto (por ejemplo: nombre, tamaño, forma, estado). Los tributos también son sustantivos.
+  - **¿Qué son los comportamientos?** También se les conoce como **métodos**. Son todas las operaciones/acciones del objeto (por ejemplo: login(), logout(), makeReport()). Suelen ser verbos o sustantivo y verbo.
+
+  
