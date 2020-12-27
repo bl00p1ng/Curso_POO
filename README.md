@@ -119,3 +119,19 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   En este punto se analizan Objetos, se establecen todos sus atributos y métodos y  en base a eso se crean Clases. Este proceso de abstraer los datos de un objeto para generar una clase (molde) se le conoce como **Abstracción**. En resumidas cuentas, la abstracción es ese proceso de analizar los objetos para identificar sus atributos y métodos comunes para en base a eso crear un molde llamando Clase.
 
+- ### Modularidad
+
+  Consiste en dividir un sistema en partes más pequeñas, cada una de esas partes se llaman **módulos**. Cada uno de esos módulos funciona de manera independiente, pero juntos conforman el sistema completo.
+
+  La modularidad permite hacer más fácil el mantenimiento y la escalabilidad de un proyecto, pues mientras en las programación estructurada se tiene un sólo archivo muy grande en el que esta toda la lógica del sistema y en el que un error puede detener la ejecución de todo el programa, en la programación orientada a objetos las diferentes funciones de un sistema se dividen en módulos independientes, por lo que a la hora de solucionar bugs sólo hay que ubicar el módulo que esta fallando y repararlo sin tener que afectar al resto del código; y si se quieren añadir más funcionalidades al proyecto solo hay que crear nuevos módulos e integrarlos dentro del sistema.
+
+  **Ventajas de la modularidad:**
+
+  - Reutilizar código.
+  - Se evitan colapsos.
+  - Código más mantenible.
+  - Mejor legibilidad en el código
+  - Rápida resolución de problemas
+
+  Las clases son el elemento que permite la modularidad en la POO, pues permiten dividir el problema en distintas clases/módulos y a su vez separar dichas clases en diferentes archivos.
+
