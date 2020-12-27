@@ -1,4 +1,4 @@
-# Curso de Programación Orientada a Objetos
+## Curso de Programación Orientada a Objetos
 
 Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](https://platzi.com/clases/oop/)
 
@@ -158,9 +158,55 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     |   **Card**    |
     |  **Paypal**   |
 
+  
+
+- ### Clases en UML y su sintaxis en código
+
+  Las clases en UML son representadas por un rectángulo. En la parte superior se pone el nombre de la clase (verde), después los atributos (morado) y por último los comportamientos/métodos (azul).
+
+  ![Definir Clases enUML](https://i.imgur.com/Li7Ndkf.png)
+
+  - **Definir Clases en Java:**
+
+    ````java
+    class Person {
+        String name = ""; /* Atributo */
+        void walk() {} /* Comportamiento / método */
+    }
+    ````
+
+  - **Definir Clases en Python:**
+
+    ````python
+    class Person:
+        name = ""; # Atributo
+        def walk(): # Comportamiento / método
+    ````
+
+  - **Definir Clases en JavaScript:**
+
+    ````javascript
+    function Person() {} /* "Clase" */
+    
+    Person.prototype.walk = function() { 
+         /* Comportamiento / método */
+    }
+    ````
+
+  - **Definir Clases en PHP:**
+
+    ````php
+    class Person {
+        $name = ""; # Atributo
+        function walk() {} # Comportamiento / método
+    }
+    ````
+
     
 
   
+
+
 
 
 
