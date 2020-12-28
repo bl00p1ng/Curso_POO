@@ -158,7 +158,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     |   **Card**    |
     |  **Paypal**   |
 
-  
+## 📚 Módulo 3. Programación Orientada a Objetos. Análisis
 
 - ### Clases en UML y su sintaxis en código
 
@@ -202,9 +202,15 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     }
     ````
 
-    
-
   
+
+- ### Modelando nuestros objetos Uber
+
+  Este es el diagrama de los diferentes Objetos vistos en clase junto con sus respectivos atributos
+
+  ![Diagrama UML Objetos Uber](https://i.imgur.com/mfm5qZt.jpg)
+
+
 
 
 
