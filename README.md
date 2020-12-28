@@ -208,6 +208,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   Este es el diagrama de los diferentes Objetos vistos en clase junto con sus respectivos atributos
 
+
   ![Diagrama UML Objetos Uber](https://i.imgur.com/mfm5qZt.jpg)
 
 
