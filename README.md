@@ -207,13 +207,36 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 - ### Modelando nuestros objetos Uber
 
   Este es el diagrama de los diferentes Objetos vistos en clase junto con sus respectivos atributos
+  
+  
+   ![Diagrama UML Objetos Uber](https://i.imgur.com/mfm5qZt.jpg)
 
+- ### ¿Qué es la herencia?
 
-  ![Diagrama UML Objetos Uber](https://i.imgur.com/mfm5qZt.jpg)
+  > "Don´t repeat yourself"
 
+  Es una filosofía que promueve la reducción de la duplicación en programación.
 
+  Toda pieza de información **nunca debería ser duplicada** pues esto incrementa la dificultad en los cambios y la evolución del proyecto. En cambio se debe procurar reutilizar código.
 
+  La **herencia** es una pieza fundamental para la reutilización de código, permite crear nuevas clases a partir de otras. Cuando se detecten elementos duplicados, se hace una *abstracción* para generar una Clase mas general de la que otras clases hereden todas esas características duplicadas.
 
-
-
-
+  > "Cuando se detectan características y comportamientos iguales se debe realizar una abstracción."
+  
+  En la herencia se establece una relación **padre e hijo**. A la clase padre se le conoce como **súper clase** y a sus clases hijas se les llama **subclases**.
+  
+  ![Súperclases y subclases](https://i.imgur.com/PKcznhI.png)
+  
+  
+  
+  En el siguiente ejemplo hay varios atributos(rojo) y comportamientos(verde) que se están repitiendo en varias clases.
+  
+  ![Ejemplo de herencia parte 1](https://i.imgur.com/eFCGqxe.png)
+  
+  A partir de esto se puede crear una súperclase(SeleccionFutbol) que agrupe esos atributos y comportamientos que se repiten y hacer que las clases Futbolista, Entrenador y Masajista los hereden.
+  
+  ![Ejemplo de herencia parte 2](https://i.imgur.com/M62n8Sj.png)
+  
+  De esta forma todos los atributos y métodos de la clase padre serán heredados a las clases hijas, lo que ahorra el tener que escribir en código cada uno de esos atributos y comportamientos para cada Clase.
+  
+  
