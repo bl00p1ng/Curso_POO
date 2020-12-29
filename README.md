@@ -247,3 +247,11 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   ![Diagrama UML Uber](https://i.imgur.com/gRKUnZL.jpg)
 
+## 📚 Módulo 4. Clases, Objetos y Método Constructor
+
+- ### Definiendo clases en Java y Python
+
+  *Main.java, main.py* → Es el punto de entrada del programa, aquí iniciará la ejecución del mismo, se importarán otras clases/módulos etc. Si el programa fuera una una especie de árbol este archivo sería como la punta de la raíz desde la cuál empezará a ejecutarse todo.
+
+  
+
