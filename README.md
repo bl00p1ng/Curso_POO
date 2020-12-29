@@ -251,7 +251,23 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
 - ### Definiendo clases en Java y Python
 
-  *Main.java, main.py* → Es el punto de entrada del programa, aquí iniciará la ejecución del mismo, se importarán otras clases/módulos etc. Si el programa fuera una una especie de árbol este archivo sería como la punta de la raíz desde la cuál empezará a ejecutarse todo.
+  *Main.java, main.py, index.js* → Es el punto de entrada del programa, aquí iniciará la ejecución del mismo, se importarán otras clases/módulos etc. Si el programa fuera una una especie de árbol este archivo sería como la punta de la raíz desde la cuál empezará a ejecutarse todo.
+
+- ### Definiendo Clases en JavaScript
+
+  Hasta el estándar EcmaScript 6 no existía el concepto de clases, por lo que estas se creaban a partir de **prototipos** que son una forma de representar *clases* a partir de la declaración de una función.
+
+  ````javascript
+  function Account() { /* Account → nombre "Clase" */
+      this.id; /* Atributo */
+      this.name;
+      this.document;
+      this.email;
+      this.password;
+  }
+  ````
+
+  
 
   
 
