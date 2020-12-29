@@ -239,4 +239,11 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   
   De esta forma todos los atributos y métodos de la clase padre serán heredados a las clases hijas, lo que ahorra el tener que escribir en código cada uno de esos atributos y comportamientos para cada Clase.
   
+  Otra raz+on por la que se puede aplicar herencia es por lógica de negocio, es decir clases que si bien no comparten muchos elementos, debido a la forma en la que funcione el software se crea un Clase padre que herede a un grupo de Clases hijas que están relacionadas entre si.
   
+  
+  
+- ### Aplicando Herencia a nuestro proyecto Uber
+
+  ![Diagrama UML Uber](https://i.imgur.com/gRKUnZL.jpg)
+
