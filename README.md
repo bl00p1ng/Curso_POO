@@ -267,7 +267,93 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   }
   ````
 
-  
+- ### Objetos, método constructor y su sintaxis en código
 
-  
+  Los **Objetos** son *instancias* de la clase. Son el resultado de lo que se "moldeo" en la clase.
 
+  - **Declarar Objetos en Java**
+
+    ````java
+    Person person = new Person();
+    ````
+
+  - **Declarar Objetos en Python**
+
+    ````python
+    person = Person()
+    ````
+
+  - **Declarar Objetos en JavaScript**
+
+    ````javascript
+    var person = new Person();
+    ````
+
+  - **Declarar Objetos en PHP**
+
+    ````php
+    $person = new Person();
+    ````
+
+    **Método Constructor:** es un método que le da un estado inicial al objeto. Debe llamarse igual que la clase seguido de paréntesis. Dentro de esos paréntesis se ponen los parámetros mínimos para inicializar el objeto.
+
+    **Crear métodos constructores en diferentes lenguajes:**
+
+    - **Java**
+
+      ````java
+      public Person(String name) { /* String name → Parámetro */
+          this.name =  name;
+      }
+      ````
+
+    - **JavaScript**
+
+      ````javascript
+      function Person (name) { /* name → Parámetro */
+          this.name = name
+      }
+      ````
+
+    - **Python**
+
+      ````python
+      def __init__(self, name): # name → Parámetro
+          self.name = name
+      ````
+
+    - **PHP**
+
+      ````php
+      public function _construct($name) { # $name → Parámetro
+          $this -> name = name;
+      }
+      ````
+
+    **Llamar a un Objeto en diferentes lenguajes**
+
+    - **Java**
+
+      ````java
+      Person person = new Person("Andrés");
+      ````
+
+    - **JavaScript**
+
+      ````javascript
+      var person = new Person("Andrés");
+      ````
+
+    - **Python**
+
+      ````python
+      person = Person("Andrés")
+      ````
+
+    - **PHP**
+
+      ````php
+      $person = new Person("Andrés);
+      ````
+
+      
