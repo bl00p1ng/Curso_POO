@@ -356,4 +356,58 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
       $person = new Person("Andrés);
       ````
 
-      
+- ## Objetos. Dando vida a nuestras clases en Java y Python
+
+  **Java**, entre otros lenguajes, provee un método constructor **por defecto** para los objetos que se creen. 
+
+  ````java
+  Car car = new Car();
+  ````
+
+  Una vez se ha instanciado el objeto se puede acceder a sus atributos usando notación de punto.
+
+  ````java
+  car.license = "AMQ258";
+  ````
+
+  También pueden crearse métodos dentro de la clase y acceder a ellos usando notación de punto.
+
+  ````java
+  public class Car {
+  	/* Atributos */
+          
+  	void printDataCar() { /* Método */
+          
+          System.out.println("Car License: " + license);
+          System.out.println("Car Driver: " + driver);
+          System.out.println("Car Passengers: " + passenger);
+  
+      }
+  }
+  ````
+
+  Para llamar al método *printDataCar()* con la sintaxis de notación de punto
+
+  ````java
+  car.printDataCar();
+  ````
+
+  En el caso de **Python**, primero hay que importar el módulo con la Clase
+
+  ````python
+  from car import Car # car → nombre de archivo sin la extención. Car → Nombre de la clase
+  ````
+
+  Luego se instancia el objeto, y una vez hecho eso ya se puede acceder a los atributos del objeto usando la notación de punto.
+
+  ````python
+  car = car()
+  car.licese = "AMS286"
+  car.driver = "Felipe López"
+  car.passengers = 4
+  
+  # Para imprimir los atributos del objeto
+  print(vars(car))
+  ````
+
+  
