@@ -356,7 +356,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
       $person = new Person("Andrés);
       ````
 
-- ## Objetos. Dando vida a nuestras clases en Java y Python
+- ### Objetos. Dando vida a nuestras clases en Java y Python
 
   **Java**, entre otros lenguajes, provee un método constructor **por defecto** para los objetos que se creen. 
 
@@ -410,4 +410,64 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   print(vars(car))
   ````
 
+
+- ### Declarando un Método Constructor en Java y JavaScript
+
+  **Método constructor en Java:**
+
+  ````java
+  public Car(String license, Account driver) { /* String license, Account driver → Parámetros obligatorios para crear el objeto. */
+  	this.license = license; /* this.license → Hace resferencia a la variable de la clase. license → Hace referencia a la variable del método */ 
+  }
+  ````
+
+  Los parámetros del método constructor pueden tener cualquier nombre pero es una buena práctica nombrarlos igual que los atributos de la clase.
+
+  Los parámetros que se le pasan al método son variables locales, para que el valor que se les pase se aplique a los atributos de la Clase hay que llamar al atributo con *this*. 
+
+  Para instanciar un Objeto, en Java la sintaxis sería la siguiente:
+
+  ````java
+  Car car = new Car("AMQ258", new Account("Andrés López", "AND123"));
+  ````
+
+  Se pone el tipo de la Clase seguido del nombre de la instancia, y luego con *new* se crea dicha instancia y se pasan los parámetros necesarios para crear el objeto deseado.
+
   
+
+  **Método Constructor en JavaScript**
+
+  ````javascript
+  function Car(license, driver) { /* license, driver → Parámetros para crear el objeto */
+  
+      this.id;
+      this.license = license;
+      this.driver = driver;
+      this.passenger;
+      
+  }
+  ````
+
+  En el caso de JavaScript la función que define la Clase también sirve como método constructor, por lo que sólo hay que pasarle a dicha función los parámetros necesarios para crear el objeto.
+
+  El funcionamiento de *this* en JavaScript es igual qu een Java, pues este también hace referencia a la Clase para así poder acceder a sus atributos usando l anotación de punto.
+
+  Lós métodos en JavaScript se crean fuera de la Clase y usando *Prototipos*.
+
+  ````javascript
+  Car.prototype.printDataCar = function () { /* Método de la Clase Car */
+      
+      console.log(this.driver)
+      console.log(this.driver.name)
+      console.log(this.driver.document)
+       
+  }
+  ````
+
+  Para instanciar un Objeto, en JavaScript la sintaxis sería la siguiente:
+
+  ````javascript
+  var car = new Car("AW572", new Account("Andrés López", "ANDL580"))
+  ````
+
+  Se una variable donde se va crear el Objeto, y luego con *new* se crea el objeto y se pasan los parámetros necesarios para su creación.
