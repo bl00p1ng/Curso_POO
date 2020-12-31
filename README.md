@@ -471,3 +471,58 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   ````
 
   Se una variable donde se va crear el Objeto, y luego con *new* se crea el objeto y se pasan los parámetros necesarios para su creación.
+
+- ### JavaScript orientado a objetos, lo más nuevo
+
+  Desde EcmaScript 6 existen en JavaScript nuevas formas de trabajar con POO, entre ellas una nueva forma de crear Clases y el Método Constructor, no obstante estos no dejan de ser prototipos.
+
+  La nueva sintaxis para crear una Clase con su respectivo método constructor es:
+
+  ````javascript
+  class Car { /* Crea la Clase */
+      
+      constructor(license, driver) { /* Crea el método constructor */
+          
+          this.id
+          this.license = license
+          this.driver = driver
+          this.passengers
+          
+      }
+      
+      printDataCar() { /* Crea un método para la Clase Car */
+          
+          console.log(this.driver)
+          console.log(this.driver.name)
+          console.log(this.driver.document)
+          
+      }
+      
+  }
+  ````
+
+  A la hora de instanciar un objeto no hay cambios, se sigue usando la misma sintaxis de antes.
+
+- ### Declarando un Método Constructor en Python
+
+  En Python existe un concepto llamando **Métodos Mágicos**, estos son básicamente métodos que se auto-ejecutan bajo ciertas condiciones. Dentro de esta familia de métodos esta el método constructor. 
+
+  ``__init__`` es uno de estos métodos mágicos y lo que hace es personalizar la instanciación de la Clase o en palabras más sencillas, lo que este dentro de este objeto será lo primero que se ejecute cuando se instancia un objeto; esto es muy útil para por ejemplo, inicializar atributos de la Clase cuando se crea un Objeto.
+
+  ````python
+  class Account:
+      id       = int
+      name     = str
+      document = str
+      email    = str
+      password = str
+  
+      def __init__(self, name, document):
+          self.name     = name
+          self.document = document
+  ````
+
+  Otro de estos métodos mágicos es ``__new__`` que es el método que construye el objeto como tal.
+
+  Otra peculiaridad de Python es que en lugar de ``this`` se usa la palabra reservada ```self``, aunque esta hace los mismo que this y hace referencia a la Clase para así poder acceder a sus atributos/métodos.
+
