@@ -526,3 +526,73 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   Otra peculiaridad de Python es que en lugar de ``this`` se usa la palabra reservada ```self``, aunque esta hace los mismo que this y hace referencia a la Clase para así poder acceder a sus atributos/métodos.
 
+## 📚 Módulo 5. Herencia
+
+- ### Aplicando herencia en lenguaje Java y PHP
+
+  **Implementando la Herencia en diferentes lenguajes:**
+
+  - **Java:** la herencia se define de forma *explicita* usando la palabra reservada ``extends`` seguida de la Clase padre.
+
+    ````java
+    class CarBasic extends Car
+    ````
+
+    Luego de esto hay que crear un método constructor dentro de la Clase hija que coincida con el de la Clase padre. Luego se usa ``super()`` para llamar al método constructor de la Clase padre (súper Clase).
+
+    ```super`` hace referencia a la Clase padre, de hecho con ``super`` se puede acceder a los atributos/métodos de la Clase padre usando notación de punto.
+
+    Luego se usa ``this`` para pasar el valor de los parámetros a los atributos 
+
+    ````java
+    public CarBasic(String license, Account driver, String brand; String model) { /* Los parámetros incluyen los del constructor de la clase padre más los parámetros propios de la clase hija */
+    	super(license, driver);
+        this.brand = brand;
+        this.model = model;
+    }
+    ````
+
+    
+
+  - **Python:** la herencia se define pasando la Clase padre como parámetro al instanciar la Clase Hija.
+
+    ````python
+    class Student(Person):
+    ````
+
+  - **JavaScript:** aquí se toma la "clase" hija (prototipo) y la instancia cómo si fuera la "Clase" padre.
+
+    ````javascript
+    student.prototype = new Person();
+    ````
+
+  - **PHP:** se usa la misma sintaxis de Java para definir la herencia. 
+
+    ````php
+    <?php
+    
+    class CarBasic extends Car {
+    
+        public $brand;
+        public $model;    
+    
+    }
+    
+    ?>
+    ````
+
+    Luego se declaran los atributos de la Clase hija, después se crea el método constructor. En el caso de PHP en lugar de usar ``super()`` como en Java se usa ``parent::__construct()`` para acceder al constructor de la Clase padre.
+
+    Después de esto se puede usar ```$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
+
+    ````php
+    public function __construct($license, $driver, $brand, $model) { /* Método Constructor, recibe los parámetros d ela Clase padre junto con los de la Clase hija */
+            
+    	parent::__construct($license, $driver, $brand. $model);
+         $this->brand = $brand;
+         $this->model = $model;
+        
+    }
+    ````
+
+    
