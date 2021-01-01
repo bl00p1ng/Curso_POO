@@ -5,7 +5,10 @@ class UberBlack extends CardAdvanced {
 
     public function __construct($license, $driver, $typeCarAccepted, $seatsMaterial){
 
-        parent::__construct($license,$driver);
+        $this->license = $license;
+        $this->driver = $driver;
+        $this->typeCarAccepted = $typeCarAccepted;
+        $this->seatsMaterial = $seatsMaterial;
 
     }
 
