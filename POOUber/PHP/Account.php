@@ -1,19 +1,19 @@
 <?php
 
-class Accouunt {
+class Account {
+
     public $id;
     public $name;
     public $document;
     public $email;
     public $password;
 
-    public function __construct($license, $driver){
-        $this->license = $license;
-        $this->driver = $driver;
+    public function __construct($name, $document){
+
+        $this->name = $name;
+        $this->document = $document;
+        
       }
-    
-      public function PrintDataCar(){
-        echo"license: $this->license, conductor: {$this->driver->name}, document: {$this->driver->document}";
-      }
+          
 }
 ?>

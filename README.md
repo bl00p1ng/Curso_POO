@@ -570,6 +570,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
     ````php
     <?php
+    require_once('car.php'); /* Importa el archivo que contiene la case padre */
     
     class CarBasic extends Car {
     
@@ -579,12 +580,12 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     }
     
     ?>
-    ````
-
-    Luego se declaran los atributos de la Clase hija, después se crea el método constructor. En el caso de PHP en lugar de usar ``super()`` como en Java se usa ``parent::__construct()`` para acceder al constructor de la Clase padre.
-
-    Después de esto se puede usar ```$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
-
+````
+    
+Luego se declaran los atributos de la Clase hija, después se crea el método constructor. En el caso de PHP en lugar de usar ``super()`` como en Java se usa ``parent::__construct()`` para acceder al constructor de la Clase padre.
+    
+Después de esto se puede usar ```$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
+    
     ````php
     public function __construct($license, $driver, $brand, $model) { /* Método Constructor, recibe los parámetros d ela Clase padre junto con los de la Clase hija */
             
@@ -593,6 +594,21 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
          $this->model = $model;
         
     }
+````
+    
+    Para importar e instanciar un objeto la sintaxis sería la siguiente:
+    
+    ````php
+    <?php
+    
+    /* Se importa el archivo con la Clase requerida */
+    require_once('uberX.php');
+    
+    $uberX = new UberX("DFJ159", new Account("Andrés López", "AND741G779"), "Chrevrolet", "Spark");
+    $uberX->printDataCar();
+    
+    
+    ?>
     ````
-
+    
     
