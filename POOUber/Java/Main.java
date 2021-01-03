@@ -8,8 +8,8 @@ public class Main {
         car.printDataCar();
         
         // UBERX
-        UberX uberX = new UberX("HZI833", new Account("Felipe Molina", "HS73N73HD73JD"), "Ford", "Focus");
-        uberX.printCarInfo();
+        // UberX uberX = new UberX("HZI833", new Account("Felipe Molina", "HS73N73HD73JD"), "Ford", "Focus");
+        // uberX.printCarInfo();
 
         // CARD
         Card card = new Card(3246, 5429983212272529L, (short)611, "06/23");
@@ -24,6 +24,14 @@ public class Main {
         // CASH
         Cash cash = new Cash(2454);
         cash.printPaymentId();
+
+        // ACCOUNT USER
+        User user = new User("Andrés López", "JKLDASY780D", "andres@example.com", "SJ#K=FD987DFNF*");
+        user.printAccountInfo();
+
+        // DRIVER USER
+        Driver driver = new Driver("Mariana Arango", "KDS98320U453", "mariana@example.com", "JSD&0344-454");
+        driver.printAccountInfo();
 
     }
 
