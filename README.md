@@ -570,6 +570,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
     ````php
     <?php
+    
     require_once('car.php'); /* Importa el archivo que contiene la case padre */
     
     class CarBasic extends Car {
@@ -580,24 +581,24 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     }
     
     ?>
-````
+    ````
     
-Luego se declaran los atributos de la Clase hija, después se crea el método constructor. En el caso de PHP en lugar de usar ``super()`` como en Java se usa ``parent::__construct()`` para acceder al constructor de la Clase padre.
+    Luego se declaran los atributos de la Clase hija, después se crea el método constructor. En el caso de PHP en lugar de usar ``super()`` como en Java se usa ``parent::__construct()`` para acceder al constructor de la Clase padre.
     
-Después de esto se puede usar ```$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
-    
+    Después de esto se puede usar ```$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
+
     ````php
-    public function __construct($license, $driver, $brand, $model) { /* Método Constructor, recibe los parámetros d ela Clase padre junto con los de la Clase hija */
-            
-    	parent::__construct($license, $driver, $brand. $model);
-         $this->brand = $brand;
-         $this->model = $model;
-        
-    }
-````
+  public function __construct($license, $driver, $brand, $model) { /* Método Constructor, recibe los parámetros d ela Clase padre junto con los de la Clase hija */
     
+  	parent::__construct($license, $driver, $brand. $model);
+  	$this->brand = $brand;
+  	$this->model = $model;
+    
+  }
+    ````
+
     Para importar e instanciar un objeto la sintaxis sería la siguiente:
-    
+
     ````php
     <?php
     
@@ -607,8 +608,65 @@ Después de esto se puede usar ```$this`` para acceder a los atributos de la Cla
     $uberX = new UberX("DFJ159", new Account("Andrés López", "AND741G779"), "Chrevrolet", "Spark");
     $uberX->printDataCar();
     
-    
     ?>
     ````
-    
-    
+
+- ### Aplicando herencia en lenguaje Python y JavaScript
+
+  En el caso de **Python** para definir la herencia entre clases primero hay que importar la súper clase.
+
+  ````python
+  from car import Car # car → el nombre del archivo que contiene la Clase pero sin extención. Car → El nombre de la Clase que se quiere importar.
+  ````
+
+  Luego se define la herencia usando la siguiente sintaxis:
+
+  ````python
+  class UberX(Car): #UberX → (Sub Clase) La clase sobre la que se va a aplicar la herencia. Car → (Súper Clase) La Clase que se va a heredar.
+  ````
+
+  Después se crea el método constructor con los parámetros requeridos para crear el objeto, incluidos los parámetros de la Clase que se heredó. Luego se usa ``super`` para acceder al Método Constructor de la súper Clase y finalmente con ``self`` se acceder a los atributos de sub Clase para asignarles el valor que se pase por parámetro en el método constructor.
+
+  ````python
+  def __init__(self, license, driver, brand, model): # Método Constructor con los parámetros para crear el objeto
+      super.__init__(license, driver)
+      self.brand = brand
+      self.model = model
+  ````
+
+  **Nota:** si al ejecutar el programa aparece un mensaje de error como este: ``__int__ requires a super object but received a str `` hay que hacer el siguiente cambio al acceder al constructor de la súper Clase:
+
+  ````python
+  super(UberX, self).__init__(license, driver)
+  ````
+
+  En el caso de **JavaScript**, si se usa la nueva sintaxis que ofrece EcmaScript 6 se usa ``extends`` para definir la herencia. Luego se crea el constructor y se definen los atributos para crear el objeto.
+
+  ````javascript
+  class UberX extends Car {
+      constructor(license, driver, brand, model) {
+          this.brand = brand;
+          this.model = model;
+      }
+  }
+  ````
+
+  Para crear una instancia de un objeto hay que asegurarse de tener el archivo con la súper Clase vinculado en el HTML, después se crea una instancia del objeto en JavaScript con la siguiente sintaxis:
+
+  ````javascript
+  var uberX = new UberX("SXC53", new Account("Felipe Molina", "UISD6JASD6T832"), "Ford", "Focus")
+  ````
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
