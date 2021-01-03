@@ -594,11 +594,13 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   	$this->brand = $brand;
   	$this->model = $model;
     
-  }
     ````
 
+  }
+    ````
+  
     Para importar e instanciar un objeto la sintaxis sería la siguiente:
-
+  
     ````php
     <?php
     
@@ -661,7 +663,29 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   Se les puede llamar **familias** a las Clases que estén siendo heredadas. De hecho una forma en la que durante el análisis del proyecto se pueden creen ciertas Clases es por el hecho de hay Clases que lógicamente deben estar en una familia, a pesar de que no compartan código ni existan entre ellas atributos/métodos que se repitan.
 
+## 📚 Módulo 6. Encapsulamiento
 
+- ### Encapsulamiento
+
+  Permite hacer que un dato permanezca inviolable, inalterable; esto se consigue asignándole un modificador de acceso. Al encapsulamiento también se le conoce como *ocultación de información* .Los **modificadores de acceso** son los siguientes:
+
+  - **public:** es el más permisivo de todos. Puede ser accedido por cualquier elemento.
+  - **protected:** puede ser accedido  a nivel de la Clase, los paquetes de la Clase y las subclases.
+  - **default:** permite el acceso a nivel de Clases internas y paquetes. No puede ser accedido a nivel de herencia.
+  - **private:**  es el más restrictivo de todos. Sólo puede ser accedido a nivel de Clases. Sólo puede ser modificado y accedido dentro de la misma Clase.
+
+  Estos modificadores se pueden aplicar a Clases, atributos y métodos.
+
+  Con el encapsulamiento se consigue no sólo ocultar un dato sino también protegerlo.
+
+  Entre los beneficios del encapsulamiento estas los siguientes:
+
+  - Permite controlar como se acceden y modifican los datos.
+  - Se puede crear un código más flexible y fácil de cambiar frente a futuros requerimientos.
+  - Se pueden modificar partes del código sin que esto afecte al resto del software.
+  - Permite mantener la integridad de los datos.
+
+  
 
 
 

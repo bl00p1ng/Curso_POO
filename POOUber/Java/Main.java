@@ -8,8 +8,9 @@ public class Main {
         car.printDataCar();
         
         // UBERX
-        // UberX uberX = new UberX("HZI833", new Account("Felipe Molina", "HS73N73HD73JD"), "Ford", "Focus");
-        // uberX.printCarInfo();
+        UberX uberX = new UberX("HZI833", new Account("Felipe Molina", "HS73N73HD73JD"), "Ford", "Focus");
+        uberX.passenger = 5;
+        uberX.printDataCar();
 
         // CARD
         Card card = new Card(3246, 5429983212272529L, (short)611, "06/23");
