@@ -657,7 +657,9 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   var uberX = new UberX("SXC53", new Account("Felipe Molina", "UISD6JASD6T832"), "Ford", "Focus")
   ````
 
-  
+- ### Otros tipos de Herencia
+
+  Se les puede llamar **familias** a las Clases que estén siendo heredadas. De hecho una forma en la que durante el análisis del proyecto se pueden creen ciertas Clases es por el hecho de hay Clases que lógicamente deben estar en una familia, a pesar de que no compartan código ni existan entre ellas atributos/métodos que se repitan.
 
 
 
