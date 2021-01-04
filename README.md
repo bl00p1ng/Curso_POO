@@ -735,7 +735,34 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     }
     ````
 
-    
+## 📚 Módulo 7. Polimorfismo
+
+- ### Generando polimorfismo en Java
+
+  *Poli* → muchas, *morfismo* → formas.
+
+  En el **polimorfismo** se tiene un método que se comparte entre varias Clases y cada una de ellas le da el comportamiento que necesite.
+
+  ![Ejemplo de Polimorfismo](https://i.imgur.com/ps4dEwG.png)
+
+  Si se quiere una definición más especifica, se podría decir que el polimorfismo consiste en construir métodos con el mismo nombre pero con un comportamiento diferente.
+
+  **Aplicar polimorfismo en Java:**
+
+  Para sobrescribir un método que se hereda de una Súper Clase se usa la siguiente sintaxis:
+
+  ````java
+  @Override // Indica que se quiere sobrescribir el método.
+  public void setPassenger(Integer passenger) {
+      if (passenger == 6) {
+          this.passenger = passenger;
+      }
+  }
+  ````
+
+   
+
+
 
 
 

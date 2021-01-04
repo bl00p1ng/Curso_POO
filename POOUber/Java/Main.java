@@ -8,9 +8,9 @@ public class Main {
         
         // UBERX
         UberX uberX = new UberX("HZI833", new Account("Felipe Molina", "HS73N73HD73JD"), "Ford", "Focus");
-        uberX.setPassenger(2);
-        uberX.getPassenser();
-        uberX.printDataCar();
+        uberX.setPassenger(4);
+        uberX.getPassenger();
+        uberX.printDataCar();        
 
         // CARD
         Card card = new Card(3246, 5429983212272529L, (short)611, "06/23");

@@ -6,4 +6,12 @@ class UberX extends CarBasic {
 
     }
 
+    @Override
+    void printDataCar() {
+        
+        super.printDataCar();
+        System.out.println("Modelo → " + model + " Brand → " + brand);
+
+    }
+
 }
