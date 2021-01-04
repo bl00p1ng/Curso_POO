@@ -3,13 +3,13 @@ public class Main {
     public static void main(String[] args) {
 
         // CAR
-        Car car = new Car("AMQ258", new Account("Andrés López", "AND123"));
-        car.passenger = 4;
+        Car car = new Car("AMQ258", new Account("Andrés López", "AND123"));        
         car.printDataCar();
         
         // UBERX
         UberX uberX = new UberX("HZI833", new Account("Felipe Molina", "HS73N73HD73JD"), "Ford", "Focus");
-        uberX.passenger = 5;
+        uberX.setPassenger(2);
+        uberX.getPassenser();
         uberX.printDataCar();
 
         // CARD

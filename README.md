@@ -687,6 +687,58 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   
 
+- ### Encapsulando atributos en Java
+
+  Cuando no se define un modificador de acceso, Java internamente asigna el modificador ``default``.
+
+  Añadir un modificador de acceso en Java:
+
+  ````java
+  private Integer passenger;
+  ````
+
+  **Getters y Setters:** son métodos que permiten acceder y modificar un dato que esta protegido por un modificador de acceso.
+
+  - **Creando un gettter:**
+
+    ````java
+    public Integer getPassenger() {   // Integer → Tipo de dato que va a retornar el método
+        return passenger;
+    }
+    ````
+
+  - **Creando un setter:**
+
+    ````java
+    public void setPassenger(Integer passenger) { // void → Indica que el método no va a retornar nada.
+        this.passenger = passenger;
+    }
+    ````
+
+    El **getter** permite acceder al dato protegido, mientras que el **setter** permite modificar dicho dato. Al ser ambos métodos de tipo ``public`` estarán disponibles desde cualquier lugar. A la hora de llamar estos métodos, no cambio nada, el proceso es el mismo que al llamar a cualquier otro método.
+
+    Usar getters y setter es particularmente útil no sólo para proteger datos, sino también para validarlos:
+
+    ````java
+    public void setPassenger(Integer passenger) {
+    
+        if (passenger == 4) {
+    
+            this.passenger = passenger;
+    
+        } else {
+    
+            System.err.println("⚠  Necesitas asignar por lo menos 4 pasajeros");
+    
+        }
+    
+    }
+    ````
+
+    
+
+
+
 
 
 
