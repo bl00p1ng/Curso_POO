@@ -588,13 +588,12 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     Después de esto se puede usar ``$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
 
     ````php
-  public function __construct($license, $driver, $brand, $model) { /* Método Constructor, recibe los parámetros d ela Clase padre junto con los de la Clase hija */
-    
-  	parent::__construct($license, $driver, $brand. $model);
-  	$this->brand = $brand;
-  	$this->model = $model;    
-  }
-  
+    public function __construct($license, $driver, $brand, $model) { /* Método Constructor, recibe los parámetros d ela Clase padre junto con los de la Clase hija */
+
+      parent::__construct($license, $driver, $brand. $model);
+      $this->brand = $brand;
+      $this->model = $model;    
+    }
     ````
   
     Para importar e instanciar un objeto la sintaxis sería la siguiente:
