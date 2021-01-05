@@ -10,7 +10,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   - Al saber analizar problemas y entender la programación orientada a objetos se puede avanzar y dejar de ser un programador Junior. Esto se debe a que varias de las preguntas más frecuentes de los reclutadores son *¿Qué es encapsulamiento, abstracción, herencia, polimorfismo?*
   - Saber POO permite dejar ala mala práctica de copiar y pegar código y tomar el control del proyecto y el código.
 
-  En el curso de abordan 3 aspectos fundamentales:
+  En el curso se abordan 3 aspectos fundamentales:
 
   - **Analizar:** 
     - Observación
@@ -239,7 +239,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   
   De esta forma todos los atributos y métodos de la clase padre serán heredados a las clases hijas, lo que ahorra el tener que escribir en código cada uno de esos atributos y comportamientos para cada Clase.
   
-  Otra raz+on por la que se puede aplicar herencia es por lógica de negocio, es decir clases que si bien no comparten muchos elementos, debido a la forma en la que funcione el software se crea un Clase padre que herede a un grupo de Clases hijas que están relacionadas entre si.
+  Otra razón por la que se puede aplicar herencia es por lógica de negocio, es decir clases que si bien no comparten elementos, debido a la forma en la que funcione el software se crea un Clase padre que herede a un grupo de Clases hijas que están relacionadas entre si.
   
   
   
@@ -386,7 +386,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   }
   ````
 
-  Para llamar al método *printDataCar()* con la sintaxis de notación de punto
+  Lllamar al método *printDataCar()* con la sintaxis de notación de punto
 
   ````java
   car.printDataCar();
@@ -431,7 +431,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   Car car = new Car("AMQ258", new Account("Andrés López", "AND123"));
   ````
 
-  Se pone el tipo de la Clase seguido del nombre de la instancia, y luego con *new* se crea dicha instancia y se pasan los parámetros necesarios para crear el objeto deseado.
+  Se pone el tipo de la Clase seguido del nombre de la instancia, y luego con ``new`` se crea dicha instancia y se pasan los parámetros necesarios para crear el objeto deseado.
 
   
 
@@ -450,9 +450,9 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   En el caso de JavaScript la función que define la Clase también sirve como método constructor, por lo que sólo hay que pasarle a dicha función los parámetros necesarios para crear el objeto.
 
-  El funcionamiento de *this* en JavaScript es igual qu een Java, pues este también hace referencia a la Clase para así poder acceder a sus atributos usando l anotación de punto.
+  El funcionamiento de ``this`` en JavaScript es igual que en Java, pues este también hace referencia a la Clase para así poder acceder a sus atributos usando la notación de punto.
 
-  Lós métodos en JavaScript se crean fuera de la Clase y usando *Prototipos*.
+  Los métodos en JavaScript se crean fuera de la Clase y usando *Prototipos*.
 
   ````javascript
   Car.prototype.printDataCar = function () { /* Método de la Clase Car */
@@ -470,13 +470,13 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   var car = new Car("AW572", new Account("Andrés López", "ANDL580"))
   ````
 
-  Se una variable donde se va crear el Objeto, y luego con *new* se crea el objeto y se pasan los parámetros necesarios para su creación.
+  Se usa  una variable donde se va crear el Objeto, y luego con ``new`` se crea el objeto y se pasan los parámetros necesarios para su creación.
 
 - ### JavaScript orientado a objetos, lo más nuevo
 
-  Desde EcmaScript 6 existen en JavaScript nuevas formas de trabajar con POO, entre ellas una nueva forma de crear Clases y el Método Constructor, no obstante estos no dejan de ser prototipos.
+  Desde EcmaScript 6 existen en JavaScript nuevas formas de trabajar con POO, entre ellas una nueva forma de crear "Clases" y el Método Constructor, no obstante estos no dejan de ser prototipos.
 
-  La nueva sintaxis para crear una Clase con su respectivo método constructor es:
+  La nueva sintaxis para crear una "Clase" con su respectivo método constructor es:
 
   ````javascript
   class Car { /* Crea la Clase */
@@ -524,7 +524,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
   Otro de estos métodos mágicos es ``__new__`` que es el método que construye el objeto como tal.
 
-  Otra peculiaridad de Python es que en lugar de ``this`` se usa la palabra reservada ```self``, aunque esta hace los mismo que this y hace referencia a la Clase para así poder acceder a sus atributos/métodos.
+  Otra peculiaridad de Python es que en lugar de ``this`` se usa la palabra reservada ``self``, aunque esta hace los mismo que ``this`` y hace referencia a la Clase para así poder acceder a sus atributos/métodos.
 
 ## 📚 Módulo 5. Herencia
 
@@ -540,7 +540,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
     Luego de esto hay que crear un método constructor dentro de la Clase hija que coincida con el de la Clase padre. Luego se usa ``super()`` para llamar al método constructor de la Clase padre (súper Clase).
 
-    ```super`` hace referencia a la Clase padre, de hecho con ``super`` se puede acceder a los atributos/métodos de la Clase padre usando notación de punto.
+    ``super`` hace referencia a la Clase padre, de hecho con ``super`` se puede acceder a los atributos/métodos de la Clase padre usando notación de punto.
 
     Luego se usa ``this`` para pasar el valor de los parámetros a los atributos 
 
@@ -585,18 +585,16 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     
     Luego se declaran los atributos de la Clase hija, después se crea el método constructor. En el caso de PHP en lugar de usar ``super()`` como en Java se usa ``parent::__construct()`` para acceder al constructor de la Clase padre.
     
-    Después de esto se puede usar ```$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
+    Después de esto se puede usar ``$this`` para acceder a los atributos de la Clase y asignarles el valor de los parámetros del método constructor.
 
     ````php
   public function __construct($license, $driver, $brand, $model) { /* Método Constructor, recibe los parámetros d ela Clase padre junto con los de la Clase hija */
     
   	parent::__construct($license, $driver, $brand. $model);
   	$this->brand = $brand;
-  	$this->model = $model;
-    
-    ````
-
+  	$this->model = $model;    
   }
+  
     ````
   
     Para importar e instanciar un objeto la sintaxis sería la siguiente:
@@ -627,7 +625,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
   class UberX(Car): #UberX → (Sub Clase) La clase sobre la que se va a aplicar la herencia. Car → (Súper Clase) La Clase que se va a heredar.
   ````
 
-  Después se crea el método constructor con los parámetros requeridos para crear el objeto, incluidos los parámetros de la Clase que se heredó. Luego se usa ``super`` para acceder al Método Constructor de la súper Clase y finalmente con ``self`` se acceder a los atributos de sub Clase para asignarles el valor que se pase por parámetro en el método constructor.
+  Después se crea el método constructor con los parámetros requeridos para crear el objeto, incluidos los parámetros de la súper Clase. Luego se usa ``super`` para acceder al Método Constructor de la súper Clase y finalmente con ``self`` se acceden a los atributos de sub Clase para asignarles el valor que se pase por parámetro en el método constructor.
 
   ````python
   def __init__(self, license, driver, brand, model): # Método Constructor con los parámetros para crear el objeto
@@ -667,7 +665,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
 
 - ### Encapsulamiento
 
-  Permite hacer que un dato permanezca inviolable, inalterable; esto se consigue asignándole un modificador de acceso. Al encapsulamiento también se le conoce como *ocultación de información* .Los **modificadores de acceso** son los siguientes:
+  Permite hacer que un dato permanezca inviolable, inalterable; esto se consigue asignándole un modificador de acceso. Al encapsulamiento también se le conoce como *ocultación de información*. Los **modificadores de acceso** son los siguientes:
 
   - **public:** es el más permisivo de todos. Puede ser accedido por cualquier elemento.
   - **protected:** puede ser accedido  a nivel de la Clase, los paquetes de la Clase y las subclases.
@@ -715,7 +713,7 @@ Apuntes y código del [Curso de Programación Orientada a Objetos de Platzi](htt
     }
     ````
 
-    El **getter** permite acceder al dato protegido, mientras que el **setter** permite modificar dicho dato. Al ser ambos métodos de tipo ``public`` estarán disponibles desde cualquier lugar. A la hora de llamar estos métodos, no cambio nada, el proceso es el mismo que al llamar a cualquier otro método.
+    El **getter** permite acceder al dato protegido, mientras que el **setter** permite modificar dicho dato. Al ser ambos métodos de tipo ``public`` estarán disponibles desde cualquier lugar. A la hora de llamar estos métodos, no cambia nada, el proceso es el mismo que al llamar a cualquier otro método.
 
     Usar getters y setter es particularmente útil no sólo para proteger datos, sino también para validarlos:
 
